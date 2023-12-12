@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif;
+    --fonte-texto: "Kalam", cursive;
+    --cor-principal: #112D4E;
+    --cor-secundaria: #3F72AF;
+    --cor-tercearia: #DBE2EF;
+    --cor-fonte: #F9F7F7;
+
+    --cor-preto: #000000;
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-fundo);
+    display: flex;
+}
+
+.lateral {
+    background: var(--cor-principal);
+    padding: 20px;
+    text-align: center;
+    width: 15%;
+    height: 100vh;
+}
+
+
+h1 {
+    color: var(--cor-fonte);
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+hr{
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: var(--cor-fonte);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logo{
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+.link{
+    text-align: center;
+}
+.btn {
+    transition: ease-in-out.3s;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    color: var(--cor-fonte);
+    text-decoration: none;
+    width: 100px;
+}
+ 
+.btn:hover {
+    color: var(--cor-fonte-branco);
+    background-color: var(--cor-tercearia);
+}
+
+.principal{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+#botoes{
+    margin: 35px;
+}
+.botao{
+    display: inline-block;
+    margin-right: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+.botao:hover{
+    background-color: var(--cor-tercearia);
+}
+
+table{
+    width: 85%;
+    border-collapse: collapse;
+    background-color: var(--cor-principal);
+    table-layout: fixed;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+tr{
+    color: #ffffff;
+}
+
+/* table{
+    width: 100%;
+    height: 50vh;
+    border-collapse: collapse;
+    background-color: var(--cor-fundo-tabela);
+    table-layout: fixed;
+    border: 3px solid var(--cor-borda);
+    font-size: 1.5rem;
+}
+ 
+thread th:nth-child(1) {
+    width: 30%;
+}
+ 
+thread th:ndth-child(2) {
+    width: 60%;
+}
+ 
+thread th:ndth-child(3) {
+    width: 10%;
+}
+ 
+thead{
+    color: var(--cor-fonte-preto);
+    font-size: 2rem;
+}
+ 
+th, td{
+    padding: 5px;
+    border: 1px solid var(--cor-borda);
+}
+ 
+tbody td{
+    text-align: center;
+}
+ 
+tbody tr:nth-child(odd){
+    background-color: var(--cor-fundo-linha-tabela-principal);
+}
+ 
+tbody tr:nth-child(even){
+    background-color: var(--cor-fundo-linha-tabela-secundaria);
+} */

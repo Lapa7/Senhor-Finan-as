@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif;
+    --fonte-texto: "Kalam", cursive;
+
+    --cor-principal: #112D4E;
+    --cor-secundaria: #3F72AF;
+    --cor-tercearia: #DBE2EF;
+    --cor-fonte: #F9F7F7;
+    --cor-preto: #000000;
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal));
+}
+
+h1{
+    font-size: 2em;
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 2px solid var(--cor-preto);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--cor-fonte);
+    color: var(--cor-preto);
+    padding: 7px;
+    border: 2px solid var(--cor-preto);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+}
+
+button:hover {
+    background-color: #DBE2EF; /* Um tom mais escuro ao passar o mouse */
+}
+
+/* Criar Conta */
+a {
+    color: #F9F7F7;
+    text-decoration: none;
+    display: block; /* Adiciona display: block para ocupar a largura total disponível */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    margin: 10px auto; /* Adiciona margens superior e inferior automáticas para centralizar verticalmente */
+}
+
+
+
+
+
+.desenvolvido-por {
+    text-align: center;
+    display: block;
+    color: #F9F7F7;
+    padding: 20px;
+    margin-top: 20px; /* Ajuste o espaçamento conforme necessário */
+}

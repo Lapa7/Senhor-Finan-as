@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Relatorios/styles.css">
+    <title>Relatórios - Senhor Finanças</title>
+</head>
+
+<body>
+    <header class="lateral">
+        <a href="#home"><img class="logo" src="/Receitas/img/logo.jpg" alt="Logo da empresa."></a>
+        <h1>Gerenciador Financeiro</h1>
+        <hr>
+        </a>
+
+        <section class="links">
+            <ul>
+                <a href="/Receitas/receitas.html" class="btn">
+                    <li>Receitas</li>
+                </a>
+                <a href="/Despesas/despesas.html" class="btn">
+                    <li>Despesas</li>
+                </a>
+                <a href="/Relatorios/relatorio.html" class="btn">
+                    <li>Relatórios</li>
+                </a>
+            </ul>
+        </section>
+    </header>
+
+    <main class="principal">
+        <div class="cadastro-container">
+            <form class="form" id="formulario">
+                <h2>Relatórios</h2>
+               
+                <label for="ano">Ano:</label>
+                <input type="text" id="ano" name="ano" required min 4>
+
+                <button type="submit">Gerar</button> 
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

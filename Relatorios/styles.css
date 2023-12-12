@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif;
+    --fonte-texto: "Kalam", cursive;
+
+    --cor-principal: #112D4E;
+    --cor-secundaria: #3F72AF;
+    --cor-tercearia: #DBE2EF;
+    --cor-fonte: #F9F7F7;
+    --cor-preto: #000000;
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal));
+}
+
+body {
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* ---------------- Tela Fixa ---------------- */
+
+
+.lateral {
+    background: var(--cor-principal);
+    padding: 20px;
+    text-align: center;
+    width: 15%;
+    height: 100vh;
+}
+h1 {
+    color: var(--cor-fonte);
+    margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+h2 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: var(--cor-fonte);
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.logo{
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+.link{
+    text-align: center;
+}
+.btn {
+    transition: ease-in-out.3s;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    font-size: 1.5rem;
+    color: var(--cor-fonte);
+    text-decoration: none;
+    width: 100px;
+}
+ 
+.btn:hover {
+    color: var(--cor-fonte-branco);
+    background-color: var(--cor-tercearia);
+}
+
+.principal{
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.botao:hover{
+    background-color: var(--cor-tercearia);
+}
+/* ----------- Botões e campos ---------------- */
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 2px solid var(--cor-preto);
+    border-radius: 8px;
+    width: 200px;
+}
+
+button {
+    background-color: var(--cor-fonte);
+    color: var(--cor-preto);
+    padding: 8px;
+    border: 2px solid var(--cor-preto);
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    width: 250px;
+}
+
+button:hover {
+    background-color: #DBE2EF; /* Um tom mais escuro ao passar o mouse */
+}

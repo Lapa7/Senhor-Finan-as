@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./cadastrarDespesa.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Cadastro Despesas - Senhor Finanças</title>
+</head>
+
+<body>
+    <header class="lateral">
+        <a href="#home"><img class="logo" src="/Receitas/img/logo.jpg" alt="Logo da empresa."></a>
+        <h1>Gerenciador Financeiro</h1>
+        <hr>
+        </a>
+
+        <section class="links">
+            <ul>
+                <a href="/Receitas/receitas.html" class="btn">
+                    <li>Receitas</li>
+                </a>
+                <a href="/Despesas/despesas.html" class="btn">
+                    <li>Despesas</li>
+                </a>
+                <a href="/Relatorios/relatorio.html" class="btn">
+                    <li>Relatórios</li>
+                </a>
+            </ul>
+        </section>
+    </header>
+
+    <main class="principal">
+        <div class="cadastro-container">
+            <form class="form" id="formulario">
+                <h2>Cadastro de Despesas</h2>
+
+                <div class="form-col">
+                    <div class="col">
+                        <div class="descricaoLabel">
+                            <label for="descricao">Descrição:</label>
+                        </div>
+                        <div class="descricaoInput">
+                            <input type="text" id="descricao" name="descricao" required>
+                        </div>
+
+                        <div class="valorLabel">
+                            <label for="valor">Valor:</label>
+                        </div>
+                        <div class="valorInput">
+                            <input type="text" id="valor" name="valor" required>
+                        </div>
+
+                        <div class="dtVencimentoLabel">
+                            <label for="dataVencimento">Data do Vencimento:</label>
+                        </div>
+                        <div class="dtVencimentoInput">
+                            <input type="datetime-local" id="dataVencimento" name="dataVencimento" required>
+                        </div>
+
+                        <div class="dtPagamentoLabel">
+                            <label for="dataPagamento">Data do Pagamento:</label>
+                        </div>
+                        <div class="dtPagamentoInput">
+                            <input type="datetime-local" id="dataPagamento" name="dataPagamento">
+                        </div>
+
+                    </div>
+
+                    <div class="botaoCadastrar">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+            </form>
+
+        </div>
+        <div class="desenvolvido-por">
+            <p>Desenvolvido por Victor Lapa e Matheus Barcelos</p>
+        </div>
+    </main>
+</body>
+
+</html>

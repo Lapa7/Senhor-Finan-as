@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Senhor Finanças</title>
+    <script src="./receitas.js" defer></script>
+</head>
+
+<body>
+    <header class="lateral">
+        <a href="#home"><img class="logo" src="/Receitas/img/logo.jpg" alt="Logo da empresa."></a>
+            <h1>Gerenciador Financeiro</h1>
+            <hr>
+        </a>
+
+        <section class="links">
+            <ul>
+                <a href="/Receitas/receitas.html" class="btn">
+                    <li>Receitas</li>
+                </a>
+                <a href="/Despesas/despesas.html" class="btn">
+                    <li>Despesas</li>
+                </a>
+                <a href="/Relatorios/relatorio.html" class="btn">
+                    <li>Relatórios</li>
+                </a>
+            </ul>
+        </section>
+    </header>
+
+    <main class="principal">
+
+        <section class="conteudo">
+            <h2>Receitas</h2>
+
+            <table>
+                <thead>
+                <tbody id="tbody">
+                    <tr>
+                        <th>Id</th>
+                        <th>Descrição</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                    </thead>
+ 
+                </tbody>
+                <!-- Esconder o total -->
+                <tfoot id="tfoot">
+                    <tr>
+                        <th></th>
+                        <th>Total - </th>
+                        <td colspan="4" id="total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <section id="botoes">
+                <div class="botao">
+                    <button class="botao" type="submit" onclick="buscarReceita()">Buscar</button>
+                </div>
+                <div class="botao">
+                    <button class="botao" type="submit" onclick="limparReceita()">Limpar</button>
+                </div>
+                <div class="botao">
+                    <a href="/CadastrarReceita/cadastrarReceita.html"><button class="botao" type="submit" onclick = "cadastrarReceita()" >Cadastrar</button></a>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
