@@ -1,0 +1,1 @@
+Projeto "Senhor Finanças", um gerenciador financeiro completo. Desenvolvi tabelas interativas em HTML/CSS, implementei funcionalidades essenciais com Java, usei API REST e integrei um banco de dados com JDBC. Oferece busca, exclusão e cadastro de receitas, proporcionando uma experiência eficiente e intuitiva.
